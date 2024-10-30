@@ -2227,14 +2227,14 @@ class ALT_fitters_input_checking:
                     values = list(items.iloc[:, 0].values)
                     right_censored_groups.append(values)
                     unique_right_censored_stresses.append(key)
-                    if key not in unique_failure_stresses:
-                        raise ValueError(
-                            str(
-                                "The right censored stress "
-                                + str(key)
-                                + " does not appear in failure stresses."
-                            )
-                        )
+                    # if key not in unique_failure_stresses:
+                    #     raise ValueError(
+                    #         str(
+                    #             "The right censored stress "
+                    #             + str(key)
+                    #             + " does not appear in failure stresses."
+                    #         )
+                    #     )
 
                 # add in empty lists for stresses which appear in failure_stress_1 but not in right_censored_stress_1
                 for i, stress in enumerate(unique_failure_stresses):
@@ -2325,14 +2325,14 @@ class ALT_fitters_input_checking:
                     values = list(items.iloc[:, 0].values)
                     right_censored_groups.append(values)
                     unique_right_censored_stresses_str.append(key)
-                    if key not in unique_failure_stresses_str:
-                        raise ValueError(
-                            str(
-                                "The right censored stress pair "
-                                + str([float(x) for x in list(key.split("_"))])
-                                + " does not appear in failure stresses."
-                            )
-                        )
+                    # if key not in unique_failure_stresses_str:
+                    #     raise ValueError(
+                    #         str(
+                    #             "The right censored stress pair "
+                    #             + str([float(x) for x in list(key.split("_"))])
+                    #             + " does not appear in failure stresses."
+                    #         )
+                    #     )
 
                 # add in empty lists for stresses which appear in failure_stress but not in right_censored_stress
                 for i, stress in enumerate(unique_failure_stresses_str):
