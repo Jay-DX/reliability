@@ -12,7 +12,7 @@ setuptools.setup(
     author="Matthew Reid",
     author_email="alpha.reliability@gmail.com",
     license="LGPLv3",
-    url="https://reliability.readthedocs.io/en/latest/",
+    url="https://github.com/Jay-DX/reliability.git",
     project_urls={
         'Documentation': 'https://reliability.readthedocs.io/en/latest/',
         'Source Code': 'https://github.com/MatthewReid854/reliability',
